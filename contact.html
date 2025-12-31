@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | HammerSync Ltd.</title>
+  <meta name="description" content="Contact HammerSync Ltd. for Dynamics 365, Power Platform, and Azure consulting. Send an inquiry and we’ll respond quickly." />
+  <link rel="canonical" href="https://hammersync.com/contact.html" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><span class="brand-badge" aria-hidden="true"></span>HammerSync Ltd.</a>
+      <nav class="nav-links">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="services.html">Services</a>
+        <a data-nav href="industries.html">Industries</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav class="cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 style="margin:0 0 10px;">Contact</h1>
+      <p class="lead">Tell us what you’re building. We’ll respond with next steps and a recommended approach.</p>
+
+      <div class="grid-2">
+        <div class="card card-pad">
+          <h2 style="margin:0 0 10px;">Send an inquiry</h2>
+
+          <div id="formNotice" class="notice" role="status" aria-live="polite"></div>
+
+          <form id="contactForm" class="form" novalidate>
+            <div class="row-2">
+              <div>
+                <div class="label">Name *</div>
+                <input class="input" name="name" autocomplete="name" required />
+              </div>
+              <div>
+                <div class="label">Email *</div>
+                <input class="input" name="email" type="email" autocomplete="email" required />
+              </div>
+            </div>
+
+            <div class="row-2">
+              <div>
+                <div class="label">Company</div>
+                <input class="input" name="company" autocomplete="organization" />
+              </div>
+              <div>
+                <div class="label">Project type</div>
+                <select name="projectType">
+                  <option>Dynamics 365</option>
+                  <option>Power Platform</option>
+                  <option>Azure Integration</option>
+                  <option>Architecture / Advisory</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <div class="label">Message *</div>
+              <textarea name="message" required placeholder="What problem are you solving? Timeline? Any constraints?"></textarea>
+            </div>
+
+            <!-- Honeypot (basic spam reduction) -->
+            <div style="display:none;">
+              <label>Leave this blank</label>
+              <input name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <button id="submitBtn" class="button primary" type="submit">Send inquiry</button>
+            <p class="small" style="margin:0;">Prefer email? <a href="mailto:inquiries@hammersync.com"><b>inquiries@hammersync.com</b></a></p>
+          </form>
+        </div>
+
+        <aside class="card card-pad">
+          <h2 style="margin:0 0 10px;">What to include</h2>
+          <ul class="list">
+            <li>Current system(s) and what’s broken or manual</li>
+            <li>Users/roles and success criteria</li>
+            <li>Target go-live date</li>
+            <li>Any compliance/security constraints</li>
+          </ul>
+          <div style="margin-top:12px;">
+            <p class="small"><b>Typical response time:</b> 1 business day</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand"><span class="brand-badge" aria-hidden="true"></span>HammerSync Ltd.</div>
+        <p class="small">© <span id="year"></span> HammerSync Ltd.</p>
+      </div>
+      <div><p class="small"><a href="privacy.html">Privacy</a></p></div>
+      <div><p class="small"><a href="mailto:inquiries@hammersync.com">inquiries@hammersync.com</a></p></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
+</body>
+</html>
